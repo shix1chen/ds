@@ -1,0 +1,824 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>首页</title>
+	<link type="text/css" rel="stylesheet" href="./style/reset.css" />
+	<link type="text/css" rel="stylesheet" href="./style/main.css" />
+</head>
+<script src="js/jq.js"></script>
+<script src="js/tx.js"></script>
+<body>
+
+
+	<a href="javascript:;" id='to_top'></a>
+	
+	<div id="menu">
+	 	<ul>
+			<li><a href="#item1" class="current">1F 数码城</a></li>
+			<li><a href="#item2">2F 家用</a></li>
+			<li><a href="#item3">3F 酒水</a></li>
+		</ul>
+	</div>
+
+	<!-- 遮罩层 -->
+	<div id="fullbg"></div>
+
+	<!-- 弹出层 -->
+	<div class="window" id="center">
+
+		<div class="title">
+			<span id="dl">登&nbsp;&nbsp;&nbsp;录</span>
+			<span class="x">╳</span>
+		</div>
+
+		<div class="content">
+			<div id="form">
+				<input type="text" name="username" id="username" placeholder="请输入登录名" />
+				<input type="password" name="password" id="password" placeholder="请输入密码" />
+			</div>
+			<div id='xiaci'>
+				<input type="checkbox" name="remember" id="rem" >
+				<label for='rem' title='记住密码' id='zidong'>下次自动登录</i>
+			</div>
+		</div>
+	
+		<div id='signBox'>
+			<button id='signIn'>登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+		</div>
+
+	</div>
+
+
+    <div id="content">
+	    	<div id="item1" class="item">	
+		<div class="headerBar">
+			<div class="topBar">
+				<div class="comWidth">
+					<div class="LeftArea fl">
+						<a target='_blank' href="#" class="collection">收藏</a>
+					</div>
+					<div class="RightArea fr"><a id="login">登 录</a><a id='reg'>免费注册</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="logoBar">
+				<div class="comWidth">
+					<div class="logo fl">
+						<a target='_blank' href="#">logo</a>
+					</div>
+					<div class="searchBox fl">
+						<input type="text" class="searchtext fl" placeholder="荣耀3X"/>
+						<input type="button" class="search_btn fr" value="搜 索"/>
+					</div>
+					<div class="shopCar fr">
+						<span class="shopText fl">购物车</span>
+						<span class="shopNum fr">0</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="navBox">
+				<div class="comWidth">
+					<div class="shopClass fl">
+						<h3><a target='_blank' href="fenlei.html" class='quanbufl'>全部商品分类</a><i></i></h3>
+						<div class="shopClass_show" style='display:block'>
+							<dl class="shopClass_item">
+								<dt>
+									<a target='_blank' href="shaixuan.html" class="b">手机</a>
+									<a target='_blank' href="shaixuan.html" class="b">数码</a>
+									<a target='_blank' href="shaixuan.html">合约机</a>
+								</dt>
+								<dd>
+									<a target='_blank' href="shaixuan.html">荣耀3X</a>
+									<a target='_blank' href="shaixuan.html">单反</a>
+									<a target='_blank' href="shaixuan.html">智能设备</a>
+								</dd>
+								<!-- 子菜单 -->
+								<div class="submenu">
+									<div class='leftdiv fl'>
+										<dl>
+											<dt>
+												<a target='_blank' href="shaixuan.html">电子书</a>
+											</dt>
+											<dd>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文学文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a target='_blank' href="shaixuan.html">电子书</a>
+											</dt>
+											<dd>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文学文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a target='_blank' href="shaixuan.html">电子书</a>
+											</dt>
+											<dd>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文学文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a target='_blank' href="shaixuan.html">电子书</a>
+											</dt>
+											<dd>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文学文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a target='_blank' href="shaixuan.html">电子书</a>
+											</dt>
+											<dd>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文学文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+											</dd>
+										</dl>
+									</div>
+									<div class='rightdiv fr'>
+										<dl>
+					                        <dd>
+					                            <a target='_blank' href="http://sale.jd.com/act/1XDZ6ShE5M7tTrl.html">
+					                                <img src="http://img30.360buyimg.com/erpVCAare/g16/M00/0B/1B/rBEbRlOCFcoIAAAAAAArMNB2tlkAACTlwDgVG8AACtI514.jpg"
+					                                    width="194" height="70" title="\家电">
+					                            </a>
+					                        </dd>
+					                        <dd>
+					                            <a target='_blank' href="http://sale.jd.com/act/v8kJIaPmsMGuebpH.html">
+					                                <img src="http://img30.360buyimg.com/erpVCAare/g16/M00/0B/19/rBEbRlOAiHUIAAAAAAAx8X2c6oIAACTCAP56A4AADIJ112.jpg" width="194" height="70" title="小家电--三请聚宝盆">
+					                            </a>
+					                        </dd>
+					                    </dl>
+					                    <dl>
+					                        <dt>推荐品牌</dt>
+					                        <dd>
+					                            <a target='_blank' href="shaixuan.html">美的官方旗舰店</a>
+					                        </dd>
+					                        <dd>
+					                            <a target='_blank' href="shaixuan.html">苏泊尔旗舰店</a>
+					                        </dd>
+					                        <dd>
+					                            <a target='_blank' href="shaixuan.html">九阳旗舰店</a>
+					                        </dd>
+					                        <dd>
+					                            <a target='_blank' href="shaixuan.html">东菱旗舰店</a>
+					                        </dd>
+					                        <dd>
+					                            <a target='_blank' href="shaixuan.html">海尔统帅旗舰店</a>
+					                        </dd>
+					                        <dd>
+					                            <a target='_blank' href="shaixuan.html">小熊旗舰店</a>
+					                        </dd>
+					                    </dl>
+					                    <img class="rightPic" src="./image/wii.png" />
+									</div>
+								</div>
+							</dl>
+							<dl class="shopClass_item">
+								<dt>
+									<a target='_blank' href="shaixuan.html" class="b">手机</a>
+									<a target='_blank' href="shaixuan.html" class="b">数码</a>
+									<a target='_blank' href="shaixuan.html">合约机</a>
+								</dt>
+								<dd>
+									<a target='_blank' href="shaixuan.html">荣耀3X</a>
+									<a target='_blank' href="shaixuan.html">单反</a>
+									<a target='_blank' href="shaixuan.html">智能设备</a>
+								</dd>
+
+								<!-- 子菜单 -->
+								<div class="submenu">
+									<div class='leftdiv fl'>
+										<dl>
+											<dt>
+												<a target='_blank' href="shaixuan.html">电子书</a>
+											</dt>
+											<dd>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">文学文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学苹果学</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">文苹果学</a>
+												<a target='_blank' href="shaixuan.html">文苹果学</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">文苹果学</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">文苹果学</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a target='_blank' href="shaixuan.html">电子书</a>
+											</dt>
+											<dd>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">文学文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学苹果学</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">文苹果学</a>
+												<a target='_blank' href="shaixuan.html">文苹果学</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">文苹果学</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">文苹果学</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a target='_blank' href="shaixuan.html">电子书</a>
+											</dt>
+											<dd>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">文学文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学苹果学</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">文苹果学</a>
+												<a target='_blank' href="shaixuan.html">文苹果学</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">文苹果学</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">文苹果学</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a target='_blank' href="shaixuan.html">电子书</a>
+											</dt>
+											<dd>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">文学文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学苹果学</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">文苹果学</a>
+												<a target='_blank' href="shaixuan.html">文苹果学</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">文苹果学</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">文苹果学</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a target='_blank' href="shaixuan.html">电子书</a>
+											</dt>
+											<dd>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">文学文学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学学</a>
+												<a target='_blank' href="shaixuan.html">文学</a>
+												<a target='_blank' href="shaixuan.html">文文学苹果学</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">文苹果学</a>
+												<a target='_blank' href="shaixuan.html">文苹果学</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">文苹果学</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+												<a target='_blank' href="shaixuan.html">文苹果学</a>
+												<a target='_blank' href="shaixuan.html">苹果</a>
+											</dd>
+										</dl>
+									</div>
+									<div class='rightdiv fr'>
+										<dl>
+					                        <dd>
+					                            <a target='_blank' href="http://sale.jd.com/act/1XDZ6ShE5M7tTrl.html">
+					                                <img src="http://img30.360buyimg.com/erpVCAare/g16/M00/0B/1B/rBEbRlOCFcoIAAAAAAArMNB2tlkAACTlwDgVG8AACtI514.jpg" width="194" height="70" title="\家电">
+					                            </a>
+					                        </dd>
+					                        <dd>
+					                            <a target='_blank' href="http://sale.jd.com/act/v8kJIaPmsMGuebpH.html">
+					                                <img src="http://img30.360buyimg.com/erpVCAare/g16/M00/0B/19/rBEbRlOAiHUIAAAAAAAx8X2c6oIAACTCAP56A4AADIJ112.jpg" width="194" height="70" title="小家电--三请聚宝盆">
+					                            </a> 
+					                        </dd>
+					                    </dl>
+					                    <dl>
+					                        <dt>推荐品牌</dt>
+					                        <dd>
+					                            <a target='_blank' href="shaixuan.html">美的官方旗舰店</a>
+					                        </dd>
+					                        <dd>
+					                            <a target='_blank' href="shaixuan.html">苏泊尔旗舰店</a>
+					                        </dd>
+					                        <dd>
+					                            <a target='_blank' href="shaixuan.html">九阳旗舰店</a>
+					                        </dd>
+					                        <dd>
+					                            <a target='_blank' href="shaixuan.html">东菱旗舰店</a>
+					                        </dd>
+					                        <dd>
+					                            <a target='_blank' href="shaixuan.html">海尔统帅旗舰店</a>
+					                        </dd>
+					                        <dd>
+					                            <a target='_blank' href="shaixuan.html">小熊旗舰店</a>
+					                        </dd>
+					                    </dl>
+					                    <img class="rightPic" src="./image/wii.png" />
+									</div>
+								</div>
+							</dl>
+							<dl class="shopClass_item">
+								<dt>
+									<a target='_blank' href="shaixuan.html" class="b">手机</a>
+									<a target='_blank' href="shaixuan.html" class="b">数码</a>
+									<a target='_blank' href="shaixuan.html">合约机</a>
+								</dt>
+								<dd>
+									<a target='_blank' href="shaixuan.html">荣耀3X</a>
+									<a target='_blank' href="shaixuan.html">单反</a>
+									<a target='_blank' href="shaixuan.html">智能设备</a>
+								</dd>
+							</dl>
+							<dl class="shopClass_item">
+								<dt>
+									<a target='_blank' href="shaixuan.html" class="b">手机</a>
+									<a target='_blank' href="shaixuan.html" class="b">数码</a>
+									<a target='_blank' href="shaixuan.html">合约机</a>
+								</dt>
+								<dd>
+									<a target='_blank' href="shaixuan.html">荣耀3X</a>
+									<a target='_blank' href="shaixuan.html">单反</a>
+									<a target='_blank' href="shaixuan.html">智能设备</a>
+								</dd>
+							</dl>
+							<dl class="shopClass_item" style='border-bottom:none'>
+								<dt>
+									<a target='_blank' href="shaixuan.html" class="b">手机</a>
+									<a target='_blank' href="shaixuan.html" class="b">数码</a>
+									<a target='_blank' href="shaixuan.html">合约机</a>
+								</dt>
+								<dd>
+									<a target='_blank' href="shaixuan.html">荣耀3X</a>
+									<a target='_blank' href="shaixuan.html">单反</a>
+									<a target='_blank' href="shaixuan.html">智能设备</a>
+								</dd>
+							</dl>
+						</div>
+					</div>
+
+
+					<ul class="nav fl">
+
+						<canvas id="myCanvas" height="35" width="984" 
+						style="background:#f0f;position:absolute;left:0px">
+						</canvas>
+
+						<li class="navmenu">
+							<!-- <div style="width:100%;height:5px;background:#f0f; position:absolute; bottom:0; left:0px;"></div> -->
+							<a target='_blank' href="fenlei.html" style="border-radius:10px 10px 0px 0px">数码城</a>
+							<ul>
+								<li>	
+									<a target='_blank' href="fenlei.html">数码城</a>
+									<a target='_blank' href="fenlei.html">数码城</a>
+									<a target='_blank' href="fenlei.html">数码城</a>
+									<a target='_blank' href="fenlei.html">数码城</a>
+									<a target='_blank' href="fenlei.html" style="border-radius:0px 0px 10px 10px">数码城</a>
+								</li>
+							</ul>
+						</li>
+						<li class="navmenu">
+							<a target='_blank' href="fenlei.html" style="border-radius:10px 10px 0px 0px">天黑黑</a>
+							<ul>
+								<li>
+									<a target='_blank' href="fenlei.html">天黑黑</a>
+									<a target='_blank' href="fenlei.html">天黑黑</a>
+									<a target='_blank' href="fenlei.html">天黑黑</a>
+									<a target='_blank' href="fenlei.html">天黑黑</a>
+									<a target='_blank' href="fenlei.html" style="border-radius:0px 0px 10px 10px">天黑黑</a>
+								</li>
+							</ul>
+						</li >
+						<li class="navmenu">
+							<a target='_blank' href="fenlei.html" style="border-radius:10px 10px 0px 0px">团购</a>
+							<ul>
+								<li>
+									<a target='_blank' href="fenlei.html">团购</a>
+									<a target='_blank' href="fenlei.html">团购</a>
+									<a target='_blank' href="fenlei.html">团购</a>
+									<a target='_blank' href="fenlei.html">团购</a>
+									<a target='_blank' href="fenlei.html" style="border-radius:0px 0px 10px 10px">团购</a>
+								</li>
+							</ul>
+						</li>
+						<li class="navmenu">
+							<a target='_blank' href="fenlei.html" style="border-radius:10px 10px 0px 0px">发现</a>
+							<ul>
+								<li>
+									<a target='_blank' href="fenlei.html">发现</a>
+									<a target='_blank' href="fenlei.html">发现</a>
+									<a target='_blank' href="fenlei.html">发现</a>
+									<a target='_blank' href="fenlei.html">发现</a>
+									<a target='_blank' href="fenlei.html" style="border-radius:0px 0px 10px 10px">发现</a>
+								</li>
+							</ul>
+						</li>
+						<li class="navmenu">
+							<a target='_blank' href="fenlei.html" style="border-radius:10px 10px 0px 0px">二手特卖</a>
+							<ul>
+								<li>
+									<a target='_blank' href="fenlei.html">二手特卖</a>
+									<a target='_blank' href="fenlei.html">二手特卖</a>
+									<a target='_blank' href="fenlei.html">二手特卖</a>
+									<a target='_blank' href="fenlei.html">二手特卖</a>
+									<a target='_blank' href="fenlei.html" style="border-radius:0px 0px 10px 10px">二手特卖</a>
+								</li>
+							</ul>
+						</li>
+						<li class="navmenu">
+							<a target='_blank' href="fenlei.html" style="border-radius:10px 10px 0px 0px">名品会</a>
+							<ul>
+								<li>
+									<a target='_blank' href="fenlei.html">名品会</a>
+									<a target='_blank' href="fenlei.html">名品会</a>
+									<a target='_blank' href="fenlei.html">名品会</a>
+									<a target='_blank' href="fenlei.html">名品会</a>
+									<a target='_blank' href="fenlei.html" style="border-radius:0px 0px 10px 10px">名品会</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="hide">
+		<script>
+		if (localStorage.pagecount) {
+			localStorage.pagecount = Number(localStorage.pagecount) + 1;
+		} else {
+			localStorage.pagecount = 1;
+		}
+		document.write("Visits "+ localStorage.pagecount + " time(s).");
+		</script>
+		</div>
+		<div class="banner comWidth clearfix">
+			<div class="banner_bar banner_big container" id="scroll">
+				<ul class="imgBox list" id='imgBox' style='left:-810px;'>
+					<li>
+						<a target='_blank' href="xiangxi.html">
+							<img src="./image/banner/6.jpg" alt="banner" />
+						</a>
+					</li>
+					<li>
+						<a target='_blank' href="xiangxi.html">
+							<img src="./image/banner/1.jpg" alt="banner" />
+						</a>
+					</li>
+					<li>
+						<a target='_blank' href="xiangxi.html">
+							<img src="./image/banner/2.jpg" alt="banner" />
+						</a>
+					</li>
+					<li>
+						<a target='_blank' href="xiangxi.html">
+							<img src="./image/banner/3.jpg" alt="banner" />
+						</a>
+					</li>
+					<li>
+						<a target='_blank' href="xiangxi.html">
+							<img src="./image/banner/4.jpg" alt="banner" />
+						</a>
+					</li>
+					<li>
+						<a target='_blank' href="xiangxi.html">
+							<img src="./image/banner/5.jpg" alt="banner" />
+						</a>
+					</li>
+					<li>
+						<a target='_blank' href="xiangxi.html">
+							<img src="./image/banner/6.jpg" alt="banner" />
+						</a>
+					</li>
+					<li>
+						<a target='_blank' href="xiangxi.html">
+							<img src="./image/banner/1.jpg" alt="banner" />
+						</a>
+					</li>
+				</ul>
+				<div class="imgNum" id='buttons'>
+					<a target='_blank' index="1" class="active"></a>
+					<a target='_blank' index="2"></a>
+					<a target='_blank' index="3"></a>
+					<a target='_blank' index="4"></a>
+					<a target='_blank' index="5"></a>
+					<a target='_blank' index="6"></a>
+				</div>
+				<a href='javascript:;' class='arrow' id='prev'>〈</a>
+				<a href='javascript:;' class='arrow' id='next'>〉</a>
+			</div>
+		</div>
+
+		<div id="item2" class="item">
+			<div class="shopTit comWidth">	
+				<span class='icon fl'></span>
+				<h3 class='fl'>家用电脑</h3>
+				<a target='_blank' href="" class='more fr'>更多&gt;&gt;</a>
+			</div>
+		</div>
+
+		<div class="shoplist comWidth clearfix" >
+			<div class="leftArea">
+				<div class="banner_bar banner_sm">
+					<ul class="imgBox">
+						<!-- <li><a target='_blank' href=""><img src="./image/banner/banner_sm_01.jpg" alt="banner" /></a></li> -->
+						<li><a target='_blank' href="xiangxi.html"><img src="./image/banner/banner_sm_01.jpg" alt="banner" /></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="rightArea">
+				<div class="shoplist_top clearfix">
+					<div class="shop_item">
+						<div class="shop_img">
+							<a target='_blank' href="xiangxi.html">
+								<img src="image/shopImg.jpg" alt="">
+							</a>
+						</div>
+
+						<h3>HTC新渴望8系列</h3>
+						<p>1899元</p>
+					</div>
+	                <div class="shop_item">
+						<div class="shop_img">
+							<a target='_blank' href="xiangxi.html"><img src="image/shopImg.jpg" alt=""></a>
+						</div>
+						<h3>HTC新渴望8系列</h3>
+						<p>1899元</p>
+					</div>
+	                <div class="shop_item">
+						<div class="shop_img">
+							<a target='_blank' href="#"><img src="image/shopImg.jpg" alt=""></a>
+						</div>
+						<h3>HTC新渴望8系列</h3>
+						<p>1899元</p>
+					</div>
+	                <div class="shop_item">
+						<div class="shop_img">
+							<a target='_blank' href="xiangxi.html"><img src="image/shopImg.jpg" alt=""></a>
+						</div>
+						<h3>HTC新渴望8系列</h3>
+						<p>1899元</p>
+					</div>
+				</div>
+	            <div class="shopList_sm">
+	            	<div class="shopItem_sm clearfix">
+	                	<div class="shopItem_smImg">
+	                    	<a target='_blank' href="xiangxi.html"><img src="image/sm_shang1.jpg" alt="banner" /></a>
+	                    </div>
+	                    <div class="shopItem_text">
+	                    	<p>NFC技术一碰轻松配对！接触屏幕</p>
+	                        <h3>149.00</h3>
+	                    </div>
+	                </div>
+	            	<div class="shopItem_sm">
+	                	<div class="shopItem_smImg">
+	                    	<a target='_blank' href="xiangxi.html"><img src="image/sm_shang2.jpg" alt="banner" /></a>
+	                    </div>
+	                    <div class="shopItem_text">
+	                    	<p>NFC技术一碰轻松配对！接触屏幕</p>
+	                        <h3>149.00</h3>
+	                    </div>
+	                </div>
+	            	<div class="shopItem_sm">
+	                	<div class="shopItem_smImg">
+	                    	<a target='_blank' href="xiangxi.html"><img src="image/sm_shang3.jpg" alt="banner" /></a>
+	                    </div>
+	                    <div class="shopItem_text">
+	                    	<p>NFC技术一碰轻松配对！接触屏幕</p>
+	                        <h3>149.00</h3>
+	                    </div>
+	                </div>
+	            	<div class="shopItem_sm">
+	                	<div class="shopItem_smImg">
+	                    	<a target='_blank' href="xiangxi.html"><img src="image/sm_shang4.jpg" alt="banner" /></a>
+	                    </div>
+	                    <div class="shopItem_text">
+	                    	<p>NFC技术一碰轻松配对！接触屏幕</p>
+	                        <h3>149.00</h3>
+	                    </div>
+	                </div>
+	            </div>
+			</div>
+		</div>
+	    <div id="item3" class="item">
+	    <div class="shopTit comWidth">
+			<span class='icon fl'></span>
+			<h3 class='fl'>食品酒水</h3>
+			<a target='_blank' href="" class='more fr'>更多&gt;&gt;</a>
+		</div></div>
+
+		<div class="shoplist comWidth clearfix">
+			<div class="leftArea">
+				<div class="banner_bar banner_sm">
+					<ul class="imgBox">
+						<!-- <li><a target='_blank' href=""><img src="./image/banner/banner_sm_01.jpg" alt="banner" /></a></li> -->
+						<li><a target='_blank' href="xiangxi.html"><img src="./image/banner/banner_sm_02.jpg" alt="banner" /></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="rightArea">
+				<div class="shoplist_top clearfix">
+					<div class="shop_item">
+						<div class="shop_img">
+							<a target='_blank' href="xiangxi.html"><img src="image/shopImg_sp.jpg" alt=""></a>
+						</div>
+						<h3>三月美食狂享购</h3>
+						<p>1899元</p>
+					</div>
+	                <div class="shop_item">
+						<div class="shop_img">
+							<a target='_blank' href="xiangxi.html"><img src="image/shopImg_sp.jpg" alt=""></a>
+						</div>
+						<h3>三月美食狂享购</h3>
+						<p>1899元</p>
+					</div>
+	                <div class="shop_item">
+						<div class="shop_img">
+							<a target='_blank' href="xiangxi.html"><img src="image/shopImg_sp.jpg" alt=""></a>
+						</div>
+						<h3>三月美食狂享购</h3>
+						<p>1899元</p>
+					</div>
+	                <div class="shop_item">
+						<div class="shop_img">
+							<a target='_blank' href="xiangxi.html"><img src="image/shopImg_sp.jpg" alt=""></a>
+						</div>
+						<h3>三月美食狂享购</h3>
+						<p>1899元</p>
+					</div>
+				</div>
+	            
+	            <div class="shopList_sm">
+	            	<div class="shopItem_sm clearfix">
+	                	<div class="shopItem_smImg">
+	                    	<a target='_blank' href="xiangxi.html"><img src="image/sm_xia.jpg" alt="banner" /></a>
+	                    </div>
+	                    <div class="shopItem_text">
+	                    	<p>康比特 维他保咀嚼片 60片</p>
+	                        <h3>149.00</h3>
+	                    </div>
+	                </div>
+	            	<div class="shopItem_sm">
+	                	<div class="shopItem_smImg">
+	                    	<a target='_blank' href="xiangxi.html"><img src="image/sm_xia.jpg" alt="banner" /></a>
+	                    </div>
+	                    <div class="shopItem_text">
+	                    	<p>康比特 维他保咀嚼片 60片</p>
+	                        <h3>149.00</h3>
+	                    </div>
+	                </div>
+	            	<div class="shopItem_sm">
+	                	<div class="shopItem_smImg">
+	                    	<a target='_blank' href="xiangxi.html"><img src="image/sm_xia.jpg" alt="banner" /></a>
+	                    </div>
+	                    <div class="shopItem_text">
+	                    	<p>康比特 维他保咀嚼片 60片</p>
+	                        <h3>149.00</h3>
+	                    </div>
+	                </div>
+	            	<div class="shopItem_sm">
+	                	<div class="shopItem_smImg">
+	                    	<a target='_blank' href="xiangxi.html"><img src="image/sm_xia.jpg" alt="banner" /></a>
+	                    </div>
+	                    <div class="shopItem_text">
+	                    	<p>康比特 维他保咀嚼片 60片</p>
+	                        <h3>149.00</h3>
+	                    </div>
+	                </div>
+	            </div>
+			</div>
+		</div>
+	    <div class="empty"></div>
+	    <div class="footer">
+	        <p><a target='_blank' href="#">简介</a> | <a target='_blank' href="#">介招纳贤士</a> | <a target='_blank' href="#">联系我们</a> | 客服热线：400-675-1234</p>
+	        <p>Copyright © 2006 - 2014 版权所有&nbsp;&nbsp;&nbsp;京ICP备09037834号&nbsp;&nbsp;&nbsp;京ICP证B1034-8373号&nbsp;&nbsp;&nbsp;某市公安局XX分局备案编号：123456789123</p>
+	        <p class="web"><a target='_blank' href="#"><img src="image/weblogo.jpg"></a><a target='_blank' href="#"><img src="image/weblogo.jpg"></a><a target='_blank' href="#"><img src="image/weblogo.jpg"></a><a target='_blank' href="#"><img src="image/weblogo.jpg"></a></p>
+	    </div>
+    </div>
+</body>
+</html>

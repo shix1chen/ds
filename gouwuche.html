@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>购物车</title>
+	<link type="text/css" rel="stylesheet" href="./style/reset.css" />
+	<link type="text/css" rel="stylesheet" href="./style/main.css" />
+</head>
+<script src="js/jq.js"></script>
+<script src="js/tx.js"></script>
+<body>
+
+
+	<a href="javascript:;" id='to_top'></a>
+
+	<!-- 遮罩层 -->
+	<div id="fullbg"></div>
+
+	<!-- 弹出层 -->
+	<div class="window" id="center">
+
+		<div class="title">
+			<span id="dl">登&nbsp;&nbsp;&nbsp;录</span>
+			<span class="x">╳</span>
+		</div>
+
+		<div class="content">
+			<div id="form">
+				<input type="text" name="username" id="username" placeholder="请输入登录名" />
+				<input type="password" name="password" id="password" placeholder="请输入密码" />
+			</div>
+			<div id='xiaci'>
+
+				<input type="checkbox" name="remember" id="rem" >
+				<label for='rem' title='记住密码' id='zidong'>下次自动登录</i>
+			</div>
+		</div>
+	
+		<div id='signBox'>
+			<button id='signIn'>登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+		</div>
+
+	</div>
+    	<div id="content">
+		<div class="headerBar">
+			<div class="topBar">
+				<div class="comWidth">
+					<div class="LeftArea fl">
+						<a href="#" class="collection">收藏</a>
+					</div>
+					<div class="RightArea fr">
+						<a id="login">登陆</a>
+						<a id='reg'>免费注册</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="logoBar">
+				<div class="comWidth clearfix">
+					<div class="logo fl">
+						<a href="#"><!-- <img src="./image/logo.jpg" alt="" /> -->logo</a>
+					</div>
+					<div class="step fr">
+						<ul class="yuan clearfix">
+							<li style='padding-left: 0px;'><span>1</span></li>
+							<li><span>2</span></li>
+							<li><span class='clo'>3</span></li>
+						</ul>
+						<div class="heng"></div>
+						<ul class='step_text clearfix'>
+							<li class="p1">我的购物车</li>
+							<li class="p2">填写核对订单</li>
+							<li class="p3 bai">订单提交成功</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="comWidth shouhuoXinxi">
+			<div class="shouhuo_title">
+				<span>收货信息</span>
+			</div>
+			<div class="pad_30">
+				<table class='table' cellpadding="0" cellspacing="0">
+					<tr>
+						<td><span> * </span>选择地区:</td>
+						<td><div class='select fl clearfix'>
+						海淀区五环内<span class='ssj'></span>
+						<div class="show">
+							<ul>
+								<li>朝阳</li>
+								<li>东城</li>
+								<li>西城</li>
+								<li>顺义</li>
+							</ul>
+						</div>
+					</div></td>
+					</tr>
+					<tr>
+						<td><span> * </span>详细地址:</td>
+						<td><input type="text" name="" id="dizhi" placeholder='最多输入26个数字'></td>
+					</tr>
+					<tr>
+						<td><span> * </span>收 货 人:</td>
+						<td><input type="text" name="" id="" placeholder='最多输入10个汉字'></td>
+					</tr>
+					<tr>
+						<td><span> * </span>手&nbsp;&nbsp;&nbsp;&nbsp;机:</td>
+						<td><input type="text" name="" id="" placeholder='如1212121'> 或固定电话: <input type="text" name="" id="" size=5 placeholder='区号'> - <input type="text" name="" id="" size=7 placeholder='电话号码'> - <input type="text" name="" id="" size=8 placeholder='分机号(可选)'></td>
+					</tr>
+				</table>
+				<input type="button" name="" id="btn" value='确认收货地址'>
+			</div>
+			<div class='empty'></div>
+		</div>
+		<div class="comWidth shouhuoXinxi">
+			<div class="shouhuo_title">
+				<span>支付方式</span>
+			</div>
+			<div class="pad_30">
+				<p class='fangshi'><input type="radio" name="" id="r1"><label for="r1" class='weixin'> 微信支付  &nbsp;<img src="./image/icon/weixin.jpg" alt=""> 用微信扫一扫就能支付</label></p>
+				<p class='fangshi'><input type="radio" name="" id="r2"><label for="r2"> 货到付款 &nbsp;送货上门再付款，使用现金或使用银行卡</label></p>
+			</div>
+			<div class='hr_7'></div>
+		</div>
+		<div class="comWidth shouhuoXinxi">
+			<div class="shouhuo_title">
+				<span>发票信息</span>
+			</div>
+			<div class="pad_30">
+				<p class='fp'><input type="checkbox" id='fp'> <label for="fp">需要发票</label></p>
+				<table class='table' cellpadding="0" cellspacing="0">
+					<tr>
+						<td><span> * </span>发票类型:</td>
+						<td>
+							<select name="" id="">
+								<option value="">ewq</option>
+								<option value="" selected>商业零售发票</option>
+								<option value="">xzcz</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><span> * </span>发票抬头:</td>
+						<td>
+							<select name="" id="">
+								<option value="">ewq</option>
+								<option value="" selected>个人</option>
+								<option value="">xzcz</option>
+							</select>
+							<input type="text" placeholder='阿斯顿'>
+						</td>
+					</tr>
+				</table>
+				<input type="button" name="" id="btn" value='保存'>
+				<input type="button" name="" id="btn" value='取消'>
+			</div>
+			<div class='empty'></div>
+		</div>
+		<div class="comWidth shouhuoXinxi">
+			<div class="shouhuo_title">
+				<span>送货清单</span><a href="">返回购物车修改</a>
+			</div>
+			<div class="shopping_cont">
+				<div class="cart_inner">
+					<div class="cart_head clearfix">
+						<div class="cart_item t_name">商品名称</div>
+						<div class="cart_item t_price">单价</div>
+						<div class="cart_item t_return">返现</div>
+						<div class="cart_item t_num">数量</div>
+						<div class="cart_item t_subtotal">小计</div>
+					</div>
+				
+					<div class="cart_cont clearfix">
+						<div class="cart_item t_name">
+							<div class="cart_shopInfo clearfix">
+								<img src="image/haixin.jpg" alt="">
+								<div class="cart_shopInfo_cont">
+									<p class='cart_link'><a href="">Hisense 海信 BCD-202D 202升 三门冰箱 （银色）</a></p>
+									<p class='cart_info'>[赠品] 保鲜盒.抽真空保鲜盒-海信冰洗赠品</p>
+								</div>
+							</div>
+						</div>
+						<div class="cart_item t_price">￥1566.00</div>
+						<div class="cart_item t_return">￥0.00</div>
+						<div class="cart_item t_num">1</div>
+						<div class="cart_item t_subtotal red">￥1566.00</div>	
+					</div>
+					<div class="wt">
+						若您对包裹有特殊要求，请在此留言
+					</div>
+					<div class="pad_30 clearfix">
+						<p class='bq'>	抱歉，以下商品暂时无法购买，已帮您自动在本次结算中剔除并扣减对应金额，您可以先购买其他商品</p>
+						<img src="image/icon/qingfeng.gif" alt="" class='qf fl'>
+						<div class="qf_des">
+							<p class=''><a href="">Hisense 海信 BCD-202D 202升 三门冰箱 （银色）</a></p>
+							<p class=''>[赠品] 保鲜盒.抽真空保鲜盒-海信冰洗赠品</p>
+							<p>￥4.90 <em class='red'>(无货)</em></p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class='hr_7'></div>
+			<div class='hr_7'></div>
+		</div>
+
+		<div class="comWidth shouhuoXinxi clearfix">
+			<div class="shouhuo_title">
+				<span>订单结算</span>
+			</div>
+			<div class="zongji ">
+				<p><em>总计</em> <span class='red'>￥3566.00</span></p>
+				<div class="right"><input type="submit" value="提交订单" class='tj'></div>
+			</div>
+			<div class='empty'></div>
+		</div>
+	    <div class="empty"></div>
+	    <div class="footer">
+	        <p><a href="#">简介</a> | <a href="#">介招纳贤士</a> | <a href="#">联系我们</a> | 客服热线：400-675-1234</p>
+	        <p>Copyright © 2006 - 2014 版权所有&nbsp;&nbsp;&nbsp;京ICP备09037834号&nbsp;&nbsp;&nbsp;京ICP证B1034-8373号&nbsp;&nbsp;&nbsp;某市公安局XX分局备案编号：123456789123</p>
+	        <p class="web"><a href="#"><img src="image/weblogo.jpg"></a><a href="#"><img src="image/weblogo.jpg"></a><a href="#"><img src="image/weblogo.jpg"></a><a href="#"><img src="image/weblogo.jpg"></a></p>
+	    </div>
+    </div>
+</body>
+</html>

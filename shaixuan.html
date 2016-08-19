@@ -1,0 +1,619 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>筛选页</title>
+	<link type="text/css" rel="stylesheet" href="./style/reset.css" />
+	<link type="text/css" rel="stylesheet" href="./style/main.css" />
+</head>
+<script src="js/jq.js"></script>
+<script src="js/tx.js"></script>
+<body>
+
+
+	<a href="javascript:;" id='to_top'></a>
+
+	<!-- 遮罩层 -->
+	<div id="fullbg"></div>
+
+	<!-- 弹出层 -->
+	<div class="window" id="center">
+
+		<div class="title">
+			<span id="dl">登&nbsp;&nbsp;&nbsp;录</span>
+			<span class="x">╳</span>
+		</div>
+
+		<div class="content">
+			<div id="form">
+				<input type="text" name="username" id="username" placeholder="请输入登录名" />
+				<input type="password" name="password" id="password" placeholder="请输入密码" />
+			</div>
+			<div id='xiaci'>
+
+				<input type="checkbox" name="remember" id="rem" >
+				<label for='rem' title='记住密码' id='zidong'>下次自动登录</i>
+			</div>
+		</div>
+	
+		<div id='signBox'>
+			<button id='signIn'>登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+		</div>
+
+	</div>
+
+	<div class="headerBar">
+		<div class="topBar">
+			<div class="comWidth">
+				<div class="LeftArea fl">
+					<a href="#" class="collection">收藏</a>
+				</div>
+				<div class="RightArea fr">
+					<a id="login">登陆</a>
+					<a id='reg'>免费注册</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="logoBar">
+			<div class="comWidth">
+				<div class="logo fl">
+					<a href="#"><!-- <img src="./image/logo.jpg" alt="" /> -->logo</a>
+				</div>
+				<div class="searchBox fl">
+					<input type="text" class="searchtext fl" placeholder="荣耀3X"/>
+					<input type="button" class="search_btn fr" value="搜 索"/>
+				</div>
+				<div class="shopCar fr">
+					<span class="shopText fl">购物车</span>
+					<span class="shopNum fr">0</span>
+				</div>
+			</div>
+		</div>
+<div class="navBox">
+			<div class="comWidth">
+				<div class="shopClass fl">
+					<h3>全部商品分类<i></i></h3>
+					<div class="shopClass_show hide">
+						<dl class="shopClass_item">
+							<dt>
+								<a href="#" class="b">手机</a>
+								<a href="#" class="b">数码</a>
+								<a href="#">合约机</a>
+							</dt>
+							<dd>
+								<a href="#">荣耀3X</a>
+								<a href="#">单反</a>
+								<a href="#">智能设备</a>
+							</dd>
+							<!-- 子菜单 -->
+							<div class="submenu">
+								<div class='leftdiv fl'>
+									<dl>
+										<dt>
+											<a href="#">电子书</a>
+										</dt>
+										<dd>
+											<a href="#">文学</a><a href="#">文学</a><a href="#">文学</a>
+											<a href="#">文学文学</a><a href="#">文学</a><a href="#">文文学学</a>
+											<a href="#">文学</a><a href="#">文文学文学学</a><a href="#">文学</a>
+											<a href="#">文学</a><a href="#">文文学学</a><a href="#">文文学学</a>
+											<a href="#">文学</a><a href="#">文学</a><a href="#">文文学学</a>
+											<a href="#">文学</a><a href="#">文文学学</a><a href="#">文学</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">电子书</a>
+										</dt>
+										<dd>
+											<a href="#">文学</a><a href="#">文学</a><a href="#">文学</a><a href="#">文学文学</a><a href="#">文学</a><a href="#">文文学学</a><a href="#">文学</a><a href="#">文文学文学学</a><a href="#">文学</a><a href="#">文学</a><a href="#">文文学学</a><a href="#">文文学学</a><a href="#">文学</a><a href="#">文学</a><a href="#">文文学学</a><a href="#">文学</a><a href="#">文文学学</a><a href="#">文学</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">电子书</a>
+										</dt>
+										<dd>
+											<a href="#">文学</a><a href="#">文学</a><a href="#">文学</a><a href="#">文学文学</a><a href="#">文学</a><a href="#">文文学学</a><a href="#">文学</a><a href="#">文文学文学学</a><a href="#">文学</a><a href="#">文学</a><a href="#">文文学学</a><a href="#">文文学学</a><a href="#">文学</a><a href="#">文学</a><a href="#">文文学学</a><a href="#">文学</a><a href="#">文文学学</a><a href="#">文学</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">电子书</a>
+										</dt>
+										<dd>
+											<a href="#">文学</a><a href="#">文学</a><a href="#">文学</a><a href="#">文学文学</a><a href="#">文学</a><a href="#">文文学学</a><a href="#">文学</a><a href="#">文文学文学学</a><a href="#">文学</a><a href="#">文学</a><a href="#">文文学学</a><a href="#">文文学学</a><a href="#">文学</a><a href="#">文学</a><a href="#">文文学学</a><a href="#">文学</a><a href="#">文文学学</a><a href="#">文学</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">电子书</a>
+										</dt>
+										<dd>
+											<a href="#">文学</a><a href="#">文学</a><a href="#">文学</a><a href="#">文学文学</a><a href="#">文学</a><a href="#">文文学学</a><a href="#">文学</a><a href="#">文文学文学学</a><a href="#">文学</a><a href="#">文学</a><a href="#">文文学学</a><a href="#">文文学学</a><a href="#">文学</a><a href="#">文学</a><a href="#">文文学学</a><a href="#">文学</a><a href="#">文文学学</a><a href="#">文学</a>
+										</dd>
+									</dl>
+								</div>
+								<div class='rightdiv fr'>
+									<dl>
+				                        <dd>
+				                            <a href="http://sale.jd.com/act/1XDZ6ShE5M7tTrl.html">
+				                                <img src="http://img30.360buyimg.com/erpVCAare/g16/M00/0B/1B/rBEbRlOCFcoIAAAAAAArMNB2tlkAACTlwDgVG8AACtI514.jpg"
+				                                    width="194" height="70" title="\家电">
+				                            </a>
+				                        </dd>
+				                        <dd>
+				                            <a href="http://sale.jd.com/act/v8kJIaPmsMGuebpH.html">
+				                                <img src="http://img30.360buyimg.com/erpVCAare/g16/M00/0B/19/rBEbRlOAiHUIAAAAAAAx8X2c6oIAACTCAP56A4AADIJ112.jpg" width="194" height="70" title="小家电--三请聚宝盆">
+				                            </a>
+				                        </dd>
+				                    </dl>
+				                    <dl>
+				                        <dt>推荐品牌</dt>
+				                        <dd>
+				                            <a href="#">美的官方旗舰店</a>
+				                        </dd>
+				                        <dd>
+				                            <a href="#">苏泊尔旗舰店</a>
+				                        </dd>
+				                        <dd>
+				                            <a href="#">九阳旗舰店</a>
+				                        </dd>
+				                        <dd>
+				                            <a href="#">东菱旗舰店</a>
+				                        </dd>
+				                        <dd>
+				                            <a href="#">海尔统帅旗舰店</a>
+				                        </dd>
+				                        <dd>
+				                            <a href="#">小熊旗舰店</a>
+				                        </dd>
+				                    </dl>
+				                    <img class="rightPic" src="./image/wii.png" />
+								</div>
+							</div>
+						</dl>
+						<dl class="shopClass_item">
+							<dt>
+								<a href="#" class="b">手机</a>
+								<a href="#" class="b">数码</a>
+								<a href="#">合约机</a>
+							</dt>
+							<dd>
+								<a href="#">荣耀3X</a>
+								<a href="#">单反</a>
+								<a href="#">智能设备</a>
+							</dd>
+
+							<!-- 子菜单 -->
+							<div class="submenu">
+								<div class='leftdiv fl'>
+									<dl>
+										<dt>
+											<a href="#">电子书</a>
+										</dt>
+										<dd>
+											<a href="#">苹果</a><a href="#">文学</a><a href="#">苹果</a><a href="#">文学文学</a><a href="#">文学</a><a href="#">文文学学</a><a href="#">文学</a><a href="#">文文学苹果学</a><a href="#">苹果</a><a href="#">苹果</a><a href="#">文苹果学</a><a href="#">文苹果学</a><a href="#">苹果</a><a href="#">苹果</a><a href="#">文苹果学</a><a href="#">苹果</a><a href="#">文苹果学</a><a href="#">苹果</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">电子书</a>
+										</dt>
+										<dd>
+											<a href="#">苹果</a><a href="#">苹果</a><a href="#">苹果</a><a href="#">苹果苹果</a><a href="#">苹果</a><a href="#">文苹果学</a><a href="#">苹果</a><a href="#">文苹果苹果学</a><a href="#">苹果</a><a href="#">苹果</a><a href="#">文苹果学</a><a href="#">文苹果学</a><a href="#">苹果</a><a href="#">苹果</a><a href="#">文苹果学</a><a href="#">苹果</a><a href="#">文苹果学</a><a href="#">苹果</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">电子书</a>
+										</dt>
+										<dd>
+											<a href="#">苹果</a><a href="#">苹果</a><a href="#">苹果</a><a href="#">苹果苹果</a><a href="#">苹果</a><a href="#">文苹果学</a><a href="#">苹果</a><a href="#">文苹果苹果学</a><a href="#">苹果</a><a href="#">苹果</a><a href="#">文苹果学</a><a href="#">文苹果学</a><a href="#">苹果</a><a href="#">苹果</a><a href="#">文苹果学</a><a href="#">苹果</a><a href="#">文苹果学</a><a href="#">苹果</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">电子书</a>
+										</dt>
+										<dd>
+											<a href="#">苹果</a><a href="#">苹果</a><a href="#">苹果</a><a href="#">苹果苹果</a><a href="#">苹果</a><a href="#">文苹果学</a><a href="#">苹果</a><a href="#">文苹果苹果学</a><a href="#">苹果</a><a href="#">苹果</a><a href="#">文苹果学</a><a href="#">文苹果学</a><a href="#">苹果</a><a href="#">苹果</a><a href="#">文苹果学</a><a href="#">苹果</a><a href="#">文苹果学</a><a href="#">苹果</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">电子书</a>
+										</dt>
+										<dd>
+											<a href="#">苹果</a><a href="#">苹果</a><a href="#">苹果</a><a href="#">苹果苹果</a><a href="#">苹果</a><a href="#">文苹果学</a><a href="#">苹果</a><a href="#">文苹果苹果学</a><a href="#">苹果</a><a href="#">苹果</a><a href="#">文苹果学</a><a href="#">文苹果学</a><a href="#">苹果</a><a href="#">苹果</a><a href="#">文苹果学</a><a href="#">苹果</a><a href="#">文苹果学</a><a href="#">苹果</a>
+										</dd>
+									</dl>
+								</div>
+								<div class='rightdiv fr'>
+									<dl>
+				                        <dd>
+				                            <a href="http://sale.jd.com/act/1XDZ6ShE5M7tTrl.html">
+				                                <img src="http://img30.360buyimg.com/erpVCAare/g16/M00/0B/1B/rBEbRlOCFcoIAAAAAAArMNB2tlkAACTlwDgVG8AACtI514.jpg" width="194" height="70" title="\家电">
+				                            </a>
+				                        </dd>
+				                        <dd>
+				                            <a href="http://sale.jd.com/act/v8kJIaPmsMGuebpH.html">
+				                                <img src="http://img30.360buyimg.com/erpVCAare/g16/M00/0B/19/rBEbRlOAiHUIAAAAAAAx8X2c6oIAACTCAP56A4AADIJ112.jpg" width="194" height="70" title="小家电--三请聚宝盆">
+				                            </a> 
+				                        </dd>
+				                    </dl>
+				                    <dl>
+				                        <dt>推荐品牌</dt>
+				                        <dd>
+				                            <a href="#">美的官方旗舰店</a>
+				                        </dd>
+				                        <dd>
+				                            <a href="#">苏泊尔旗舰店</a>
+				                        </dd>
+				                        <dd>
+				                            <a href="#">九阳旗舰店</a>
+				                        </dd>
+				                        <dd>
+				                            <a href="#">东菱旗舰店</a>
+				                        </dd>
+				                        <dd>
+				                            <a href="#">海尔统帅旗舰店</a>
+				                        </dd>
+				                        <dd>
+				                            <a href="#">小熊旗舰店</a>
+				                        </dd>
+				                    </dl>
+				                    <img class="rightPic" src="./image/wii.png" />
+								</div>
+							</div>
+						</dl>
+						<dl class="shopClass_item">
+							<dt>
+								<a href="#" class="b">手机</a>
+								<a href="#" class="b">数码</a>
+								<a href="#">合约机</a>
+							</dt>
+							<dd>
+								<a href="#">荣耀3X</a>
+								<a href="#">单反</a>
+								<a href="#">智能设备</a>
+							</dd>
+						</dl>
+						<dl class="shopClass_item">
+							<dt>
+								<a href="#" class="b">手机</a>
+								<a href="#" class="b">数码</a>
+								<a href="#">合约机</a>
+							</dt>
+							<dd>
+								<a href="#">荣耀3X</a>
+								<a href="#">单反</a>
+								<a href="#">智能设备</a>
+							</dd>
+						</dl>
+						<dl class="shopClass_item" >
+							<dt>
+								<a href="#" class="b">手机</a>
+								<a href="#" class="b">数码</a>
+								<a href="#">合约机</a>
+							</dt>
+							<dd>
+								<a href="#">荣耀3X</a>
+								<a href="#">单反</a>
+								<a href="#">智能设备</a>
+							</dd>
+						</dl>
+					</div>
+				</div>
+
+
+				<ul class="nav fl">
+
+					<canvas id="myCanvas" height="35" width="984" 
+					style="background:#f0f;position:absolute;left:0px">
+					</canvas>
+
+					<li class="navmenu">
+						<div style="width:100%;height:5px;background:#f0f; position:absolute; bottom:0; left:0px;"></div>
+						<a href="#" style="border-radius:10px 10px 0px 0px">数码城</a>
+						<ul>
+							<li>	
+								<a href="#">数码城</a>
+								<a href="#">数码城</a>
+								<a href="#">数码城</a>
+								<a href="#">数码城</a>
+								<a href="#" style="border-radius:0px 0px 10px 10px">数码城</a>
+							</li>
+						</ul>
+					</li>
+					<li class="navmenu">
+						<a href="#" style="border-radius:10px 10px 0px 0px">天黑黑</a>
+						<ul>
+							<li>
+								<a href="#">天黑黑</a>
+								<a href="#">天黑黑</a>
+								<a href="#">天黑黑</a>
+								<a href="#">天黑黑</a>
+								<a href="#" style="border-radius:0px 0px 10px 10px">天黑黑</a>
+							</li>
+						</ul>
+					</li >
+					<li class="navmenu">
+						<a href="#" style="border-radius:10px 10px 0px 0px">团购</a>
+						<ul>
+							<li>
+								<a href="#">团购</a>
+								<a href="#">团购</a>
+								<a href="#">团购</a>
+								<a href="#">团购</a>
+								<a href="#" style="border-radius:0px 0px 10px 10px">团购</a>
+							</li>
+						</ul>
+					</li>
+					<li class="navmenu">
+						<a href="#" style="border-radius:10px 10px 0px 0px">发现</a>
+						<ul>
+							<li>
+								<a href="#">发现</a>
+								<a href="#">发现</a>
+								<a href="#">发现</a>
+								<a href="#">发现</a>
+								<a href="#" style="border-radius:0px 0px 10px 10px">发现</a>
+							</li>
+						</ul>
+					</li>
+					<li class="navmenu">
+						<a href="#" style="border-radius:10px 10px 0px 0px">二手特卖</a>
+						<ul>
+							<li>
+								<a href="#">二手特卖</a>
+								<a href="#">二手特卖</a>
+								<a href="#">二手特卖</a>
+								<a href="#">二手特卖</a>
+								<a href="#" style="border-radius:0px 0px 10px 10px">二手特卖</a>
+							</li>
+						</ul>
+					</li>
+					<li class="navmenu">
+						<a href="#" style="border-radius:10px 10px 0px 0px">名品会</a>
+						<ul>
+							<li>
+								<a href="#">名品会</a>
+								<a href="#">名品会</a>
+								<a href="#">名品会</a>
+								<a href="#">名品会</a>
+								<a href="#" style="border-radius:0px 0px 10px 10px">名品会</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+	<div class="hr_7"></div>
+	<div class="comWidth clearfix products">
+		<div class="leftArea">
+			<div class='leftNav vertical'>
+				<h3 class='nav_title'>手机、相机、数码</h3>
+				<div class="nav_cont">
+					<h3>手机通讯</h3>
+					<ul class="navContList clearfix">
+						<li><a href="#">凡事都</a></li>
+						<li><a href="#">常兴庄村</a></li>
+						<li><a href="#">凤舞府</a></li>
+						<li><a href="#">七味都气</a></li>
+						<li><a href="#">豆沙方糕</a></li>
+					</ul>
+				</div>
+				<div class="nav_cont">
+					<h3>手机通讯</h3>
+					<ul class="navContList clearfix">
+						<li><a href="#">凡事都</a></li>
+						<li><a href="#">常兴庄村</a></li>
+						<li><a href="#">凤舞府</a></li>
+						<li><a href="#">豆沙方糕</a></li>
+					</ul>
+				</div>
+				<div class="nav_cont">
+					<h3>手机通讯</h3>
+					<ul class="navContList clearfix">
+						<li><a href="#">干豆腐干</a></li>
+						<li><a href="#">七味都气</a></li>
+						<li><a href="#">豆沙方糕</a></li>
+					</ul>
+				</div>
+				<div class="nav_cont">
+					<h3>手机通讯</h3>
+					<ul class="navContList clearfix">
+						<li><a href="#">凡事都</a></li>
+						<li><a href="#">干豆腐干</a></li>
+						<li><a href="#">七味都气</a></li>
+						<li><a href="#">豆沙方糕</a></li>
+					</ul>
+				</div>
+				<div class="nav_cont">
+					<h3>手机通讯</h3>
+					<ul class="navContList clearfix">
+						<li><a href="#">啥地方发生</a></li>
+						<li><a href="#">豆沙方糕</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="rightArea">
+			<div class="screening_box">
+				<dl class="screening clearfix">
+					<dt>手机</dt>
+					<dd class='limit'>
+						<a href="">不限</a>
+					</dd>
+					<dd>
+						<ul class='screen_list clearfix'>
+							<li><a href="">Sumsung/三星</a></li>
+							<li><a href="">Apple/苹果</a></li>
+							<li><a href="">Huawei/华为</a></li>
+							<li><a href="">Apple/苹果</a></li>
+							<li><a href="">Huawei/华为</a></li>
+							<li><a href="">Apple/苹果</a></li>
+							<li><a href="">Huawei/华为</a></li>
+						</ul>
+					</dd>
+
+					<dd class='more'>
+						<a href="">更多》</a>
+					</dd>
+				</dl>
+			</div>
+			<div class="screening_box">
+				<dl class="screening clearfix">
+					<dt>手机</dt>
+					<dd class='limit'>
+						<a href="">不限</a>
+					</dd>
+					<dd>
+						<ul class='screen_list clearfix'>
+							<li><a href="">Sumsung/三星</a></li>
+							<li><a href="">Apple/苹果</a></li>
+							<li><a href="">Huawei/华为</a></li>
+							<li><a href="">Apple/苹果</a></li>
+							<li><a href="">Apple/苹果</a></li>
+							<li><a href="">Huawei/华为</a></li>
+							<li><a href="">Apple/苹果</a></li>
+							<li><a href="">Huawei/华为</a></li>
+						</ul>
+					</dd>
+					<dd class='more'>
+						<a href="">更多》</a>
+					</dd>
+				</dl>
+			</div>
+			<div class="screening_box">
+				<dl class="screening clearfix">
+					<dt>手机</dt>
+					<dd class='limit'>
+						<a href="">不限</a>
+					</dd>
+					<dd>
+						<ul class='screen_list clearfix'>
+							<li><a href="">Sumsung/三星</a></li>
+							<li><a href="">Apple/苹果</a></li>
+							<li><a href="">Huawei/华为</a></li>
+							<li><a href="">Huawei/华为</a></li>
+							<li><a href="">Apple/苹果</a></li>
+							<li><a href="">Huawei/华为</a></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+			<div class="screening_box">
+				<dl class="screening clearfix">
+					<dt>更多选项</dt>
+					<dd>
+						<div class="screen_more">
+							<a href="">CPU核心数&nbsp;&nbsp;∨</a>
+						</div>
+						<div class="screen_more">
+							<a href="">Apple/苹果&nbsp;&nbsp;∨</a>
+						</div>
+					</dd>
+				</dl>
+			</div>
+			<div class="addInfo">
+				<div class="address fl">
+					<span class='fl'>送至</span>
+					<div class='select fl clearfix'>
+						海淀区五环内<span class='ssj'></span>
+						<div class="show">
+							<ul>
+								<li>朝阳</li>
+								<li>东城</li>
+								<li>西城</li>
+								<li>顺义</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<span class="check fr">
+					<input type="checkbox" name="" id="check">
+					<label for="check">仅显示有货</label>&nbsp;&nbsp;
+					<span class='sum'>
+						共 <span class='sum_red'>16238</span> 件商品	
+					</span>
+				</span>
+			</div>
+
+			
+			<div class="products_list three clearfix">
+				<div class="item">
+					<div class="img_item">
+						<a href="xiangxi.html"><img src="./image/shopImg.jpg" alt=""></a>
+					</div>
+					<p><a href="">手机卡了点时空裂缝的世界分的撒的微微大声道解圣诞节发</a></p>
+					<p class='money'>￥888</p>
+					<div class="renqi"></div>
+					<p class='addCar'><a href="">加入购物车</a></p>
+				</div>
+				
+				<div class="item">
+					<div class="img_item">
+						<a href="xiangxi.html"><img src="./image/shopImg.jpg" alt=""></a>
+					</div>
+					<p><a href="">手机卡了点时空裂缝的世界分的撒的微微大声道解圣诞节发</a></p>
+					<p class='money'>￥888</p>
+					<p class='addCar'><a href="">加入购物车</a></p>
+					<div class="renqi"></div>
+				</div>
+				<div class="item">
+					<div class="img_item">
+						<a href="xiangxi.html"><img src="./image/shopImg.jpg" alt=""></a>
+					</div>
+					<p><a href="">手机卡了点时空裂缝的世界分的撒的微微大声道解圣诞节发</a></p>
+					<p class='money'>￥888</p>
+					<p class='addCar'><a href="">加入购物车</a></p>
+				</div>
+				<div class="item">
+					<div class="img_item">
+						<a href="xiangxi.html"><img src="./image/shopImg.jpg" alt=""></a>
+					</div>
+					<p><a href="">手机卡了点时空裂缝的世界分的撒的微微大声道解圣诞节发</a></p>
+					<p class='money'>￥888</p>
+					<p class='addCar'><a href="">加入购物车</a></p>
+					<div class="renqi"></div>
+				</div>
+				<div class="item">
+					<div class="img_item">
+						<a href="xiangxi.html"><img src="./image/shopImg.jpg" alt=""></a>
+					</div>
+					<p><a href="">手机卡了点时空裂缝的世界分的撒的微微大声道解圣诞节发</a></p>
+					<p class='money'>￥888</p>
+					<p class='addCar'><a href="">加入购物车</a></p>
+				</div>
+			</div>	
+			<div class="page">
+				<a href="">上一页</a>
+				<a href="">1</a>
+				<a href="">2</a>
+				<a href="">3</a>
+				<a href="">4</a>
+				<a href="" class='active'>5</a>
+				<a href="">6</a>
+				<a href="">7</a>
+				<a href="">8</a>
+				<a href="" class='hl'>...</a>
+				<a href="">200</a>
+				<a href="">下一页</a>&nbsp;&nbsp;
+				共200页，到第 <input type="text" name="" id="num"> 页&nbsp;&nbsp;<input type="button" value="确定" class='sure'>
+			</div>
+		</div>
+	</div>
+	<div class="empty"></div>
+    <div class="footer">
+        <p><a href="#">简介</a> | <a href="#">介招纳贤士</a> | <a href="#">联系我们</a> | 客服热线：400-675-1234</p>
+        <p>Copyright © 2006 - 2014 版权所有&nbsp;&nbsp;&nbsp;京ICP备09037834号&nbsp;&nbsp;&nbsp;京ICP证B1034-8373号&nbsp;&nbsp;&nbsp;某市公安局XX分局备案编号：123456789123</p>
+        <p class="web"><a href="#"><img src="image/weblogo.jpg"></a><a href="#"><img src="image/weblogo.jpg"></a><a href="#"><img src="image/weblogo.jpg"></a><a href="#"><img src="image/weblogo.jpg"></a></p>
+    </div>
+
+</body>
+</html>
