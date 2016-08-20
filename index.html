@@ -3,53 +3,14 @@
 <head>
 	<meta charset="utf-8" />
 	<title>首页</title>
-	<link type="text/css" rel="stylesheet" href="./style/reset.css" />
-	<link type="text/css" rel="stylesheet" href="./style/main.css" />
+	<link type="text/css" rel="stylesheet" href="./style/reset.css"/>
+	<link type="text/css" rel="stylesheet" href="./style/main.css"/>
 </head>
 <script src="js/jq.js"></script>
 <script src="js/tx.js"></script>
 <body>
 
-
-	<a href="javascript:;" id='to_top'></a>
 	
-	<div id="menu">
-	 	<ul>
-			<li><a href="#item1" class="current">1F 数码城</a></li>
-			<li><a href="#item2">2F 家用</a></li>
-			<li><a href="#item3">3F 酒水</a></li>
-		</ul>
-	</div>
-
-	<!-- 遮罩层 -->
-	<div id="fullbg"></div>
-
-	<!-- 弹出层 -->
-	<div class="window" id="center">
-
-		<div class="title">
-			<span id="dl">登&nbsp;&nbsp;&nbsp;录</span>
-			<span class="x">╳</span>
-		</div>
-
-		<div class="content">
-			<div id="form">
-				<input type="text" name="username" id="username" placeholder="请输入登录名" />
-				<input type="password" name="password" id="password" placeholder="请输入密码" />
-			</div>
-			<div id='xiaci'>
-				<input type="checkbox" name="remember" id="rem" >
-				<label for='rem' title='记住密码' id='zidong'>下次自动登录</i>
-			</div>
-		</div>
-	
-		<div id='signBox'>
-			<button id='signIn'>登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</button>
-		</div>
-
-	</div>
-
-
     <div id="content">
 	    	<div id="item1" class="item">	
 		<div class="headerBar">
@@ -567,72 +528,48 @@
 			</div>
 		</div>
 		</div>
-		<div class="hide">
-		<script>
-		if (localStorage.pagecount) {
-			localStorage.pagecount = Number(localStorage.pagecount) + 1;
-		} else {
-			localStorage.pagecount = 1;
-		}
-		document.write("Visits "+ localStorage.pagecount + " time(s).");
-		</script>
-		</div>
-		<div class="banner comWidth clearfix">
-			<div class="banner_bar banner_big container" id="scroll">
-				<ul class="imgBox list" id='imgBox' style='left:-810px;'>
-					<li>
-						<a target='_blank' href="xiangxi.html">
-							<img src="./image/banner/6.jpg" alt="banner" />
-						</a>
-					</li>
-					<li>
-						<a target='_blank' href="xiangxi.html">
-							<img src="./image/banner/1.jpg" alt="banner" />
-						</a>
-					</li>
-					<li>
-						<a target='_blank' href="xiangxi.html">
-							<img src="./image/banner/2.jpg" alt="banner" />
-						</a>
-					</li>
-					<li>
-						<a target='_blank' href="xiangxi.html">
-							<img src="./image/banner/3.jpg" alt="banner" />
-						</a>
-					</li>
-					<li>
-						<a target='_blank' href="xiangxi.html">
-							<img src="./image/banner/4.jpg" alt="banner" />
-						</a>
-					</li>
-					<li>
-						<a target='_blank' href="xiangxi.html">
-							<img src="./image/banner/5.jpg" alt="banner" />
-						</a>
-					</li>
-					<li>
-						<a target='_blank' href="xiangxi.html">
-							<img src="./image/banner/6.jpg" alt="banner" />
-						</a>
-					</li>
-					<li>
-						<a target='_blank' href="xiangxi.html">
-							<img src="./image/banner/1.jpg" alt="banner" />
-						</a>
-					</li>
+
+		<!-- <div class="hide"> -->
+			<script>
+			if (localStorage.pagecount) {
+				localStorage.pagecount = Number(localStorage.pagecount) + 1;
+			} else {
+				localStorage.pagecount = 1;
+			}
+			// alert("Visits "+ localStorage.pagecount + " time(s).");
+			</script>
+		<!-- </div> -->
+
+		<div class="slider">
+			<ul class="slider-main">
+				<li class="slider-panel">
+					<a href="javascript:;"><img src="./image/banner/1.jpg"></a>
+				</li>
+				<li class="slider-panel">
+					<a href="javascript:;"><img src="./image/banner/2.jpg"></a>
+				</li>
+				<li class="slider-panel">
+					<a href="javascript:;"><img src="./image/banner/3.jpg"></a>
+				</li>
+				<li class="slider-panel">
+					<a href="javascript:;"><img src="./image/banner/4.jpg"></a>
+				</li>
+			</ul>
+			<div class="slider-extra">
+				<ul class="slider-nav">
+					<li class="slider-item">1</li>
+					<li class="slider-item">2</li>
+					<li class="slider-item">3</li>
+					<li class="slider-item">4</li>
 				</ul>
-				<div class="imgNum" id='buttons'>
-					<a target='_blank' index="1" class="active"></a>
-					<a target='_blank' index="2"></a>
-					<a target='_blank' index="3"></a>
-					<a target='_blank' index="4"></a>
-					<a target='_blank' index="5"></a>
-					<a target='_blank' index="6"></a>
+				<div class="slider-page">
+					<a class="slider-pre" href="javascript:;">&lt;</a>
+					<a class="slider-next" href="javascript:;">&gt;</a>
 				</div>
-				<a href='javascript:;' class='arrow' id='prev'>〈</a>
-				<a href='javascript:;' class='arrow' id='next'>〉</a>
 			</div>
 		</div>
+
+
 
 		<div id="item2" class="item">
 			<div class="shopTit comWidth">	
@@ -725,6 +662,7 @@
 	            </div>
 			</div>
 		</div>
+
 	    <div id="item3" class="item">
 	    <div class="shopTit comWidth">
 			<span class='icon fl'></span>
@@ -820,5 +758,161 @@
 	        <p class="web"><a target='_blank' href="#"><img src="image/weblogo.jpg"></a><a target='_blank' href="#"><img src="image/weblogo.jpg"></a><a target='_blank' href="#"><img src="image/weblogo.jpg"></a><a target='_blank' href="#"><img src="image/weblogo.jpg"></a></p>
 	    </div>
     </div>
+
+	<div id="menu">
+	 	<ul>
+			<li><a href="#item1" class="current">1F 数码城</a></li>
+			<li><a href="#item2">2F 家用</a></li>
+			<li><a href="#item3">3F 酒水</a></li>
+		</ul>
+	</div>
+
+    <a href="javascript:;" id='to_top'></a>
+	<div class="mask_layer"></div>
+	<div class="login_box">
+
+		<div class="title clr">欢迎登录<span class="close fr">&times;</span></div>
+
+		<div class="content form">
+
+			<input type="text" name="username" placeholder="请输入用户名" class="username">
+			<input type="password" name="password" placeholder="请输入密码" class="password">
+
+			<span class="helper clr">
+				<span class="remember clr"><i></i>记住密码</span>
+				<a href="javascript:void;" class="forgot">忘记密码？</a>
+			</span>
+
+			<input type="submit" value="登录" class="submit">
+
+		</div>
+
+	</div>
 </body>
 </html>
+<script type="text/javascript">
+$(function(){
+
+	// 鼠标经过 商品列表
+	$(".shop_item").hover(function() {
+		$(this).find("img").stop().animate({
+			'margin-top': '16px'
+		}, 500);
+	}, function() {
+		$(this).find("img").stop().animate({
+			'margin-top': '0px'
+		}, 300);
+	});
+
+
+	// 分类导航
+	/*var dls = $('.shopClass_item');
+	for (var i = 0; i < dls.length; i++) {
+		dls.hover(function() {
+			$(this).addClass('shopClass_itemhover');
+			$('#flow').animate({
+				'left': '20px'
+			}, 600);
+		}, function() {
+			$(this).removeClass('shopClass_itemhover');
+		})
+	}*/
+	$('.shopClass_item').hover(function() {
+		$(this).toggleClass('shopClass_itemhover');
+	});
+
+
+
+	var length,
+		currentIndex = 0,
+		interval,
+		hasStarted = false, //是否已经开始轮播
+		t = 3000; 			//轮播时间间隔
+
+	length = $('.slider-panel').length;
+	
+	//将除了第一张图片隐藏
+	$('.slider-panel:not(:first)').hide();
+
+	//将第一个slider-item设为激活状态
+	$('.slider-item:first').addClass('slider-item-selected');
+
+	//隐藏向前、向后翻按钮
+	$('.slider-page').hide();
+	
+	//鼠标上悬时显示向前、向后翻按钮,停止滑动，鼠标离开时隐藏向前、向后翻按钮，开始滑动
+	$('.slider-panel, .slider-pre, .slider-next').hover(function() {
+		stop();
+		// $('.slider-page').show();
+	}, function() {
+		// $('.slider-page').hide();
+		start();
+	});
+	
+	$('.slider-item').hover(function(e) {
+		stop();
+		var preIndex = $(".slider-item").filter(".slider-item-selected").index();
+		currentIndex = $(this).index();
+		play(preIndex, currentIndex);
+	}, function() {
+		start();
+	});
+	
+	$('.slider-pre').unbind('click');
+	$('.slider-pre').bind('click', function() {
+		pre();
+	});
+
+	$('.slider-next').unbind('click');
+	$('.slider-next').bind('click', function() {
+		next();
+	});
+	
+	
+	// 向前翻页
+	function pre() {
+		var preIndex = currentIndex;
+		currentIndex = (--currentIndex + length) % length;
+		play(preIndex, currentIndex);
+	}
+	
+	// 向后翻页
+	function next() {
+		var preIndex = currentIndex;
+		currentIndex = ++currentIndex % length;
+		play(preIndex, currentIndex);
+	}
+
+	/**
+	 * 从preIndex页翻到currentIndex页
+	 * preIndex 整数，翻页的起始页
+	 * currentIndex 整数，翻到的那页
+	 */
+	function play(preIndex, currentIndex) {
+		$('.slider-panel').eq(preIndex).fadeOut(500)
+			.parent().children().eq(currentIndex).fadeIn(1000);
+		$('.slider-item').removeClass('slider-item-selected');
+		$('.slider-item').eq(currentIndex).addClass('slider-item-selected');
+	}
+	
+	// 开始轮播
+	function start() {
+		if(!hasStarted) {
+			hasStarted = true;
+			interval = setInterval(next, t);
+		}
+	}
+	
+	// 停止轮播
+	function stop() {
+		clearInterval(interval);
+		hasStarted = false;
+	}
+	
+	//开始轮播
+	start();
+	
+})
+
+
+</script>

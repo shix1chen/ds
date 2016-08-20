@@ -2,8 +2,8 @@
 @charset "utf-8";
 
 *::selection{
-	background:rgba(242,106,200,1);
-	color:white;
+	background: #4bc7c7;
+	color: white;
 }
 
 body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{
@@ -24,11 +24,13 @@ input,select,textarea{
 }
 
 /* 清浮动 */
+.clr:after,
 .clearfix:after{
-	display:block;
-	clear:both;
-	content:"";
+	content: "";
+	display: table;
+	clear: both;
 }
+
 .clearfix{
 	zoom:1;
 }
