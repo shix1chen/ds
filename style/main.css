@@ -218,6 +218,7 @@
 .shopClass{
 	font-family: "Microsoft YaHei","微软雅黑";
 	position: relative;
+	z-index: 2
 }
 .quanbufl{
 	color: #fff;
