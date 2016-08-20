@@ -12,7 +12,7 @@ $(function() {
 	$('.remember').click(function(event) {
 		$(this).toggleClass('checked');
 	});
-	
+
 	// // 点击登录 
 	// $("#login").click(function() {
 
@@ -136,6 +136,22 @@ $(function() {
 		$('.shopClass_show').addClass('hide');
 	});
 
+
+	// 分类导航
+	/*var dls = $('.shopClass_item');
+	for (var i = 0; i < dls.length; i++) {
+		dls.hover(function() {
+			$(this).addClass('shopClass_itemhover');
+			$('#flow').animate({
+				'left': '20px'
+			}, 600);
+		}, function() {
+			$(this).removeClass('shopClass_itemhover');
+		})
+	}*/
+	$('.shopClass_item').hover(function() {
+		$(this).toggleClass('shopClass_itemhover');
+	});
 
 
 	// 回到顶部

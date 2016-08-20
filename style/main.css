@@ -2050,8 +2050,8 @@
 .slider-nav,
 .slider-pre,
 .slider-next{
-	/*position: absolute;*/
-	/*z-index: 5;*/
+	position: absolute;
+	z-index: 1;
 }
 
 .slider-panel{

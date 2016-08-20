@@ -805,24 +805,6 @@ $(function(){
 	});
 
 
-	// 分类导航
-	/*var dls = $('.shopClass_item');
-	for (var i = 0; i < dls.length; i++) {
-		dls.hover(function() {
-			$(this).addClass('shopClass_itemhover');
-			$('#flow').animate({
-				'left': '20px'
-			}, 600);
-		}, function() {
-			$(this).removeClass('shopClass_itemhover');
-		})
-	}*/
-	$('.shopClass_item').hover(function() {
-		$(this).toggleClass('shopClass_itemhover');
-	});
-
-
-
 	var length,
 		currentIndex = 0,
 		interval,
@@ -843,9 +825,9 @@ $(function(){
 	//鼠标上悬时显示向前、向后翻按钮,停止滑动，鼠标离开时隐藏向前、向后翻按钮，开始滑动
 	$('.slider-panel, .slider-pre, .slider-next').hover(function() {
 		stop();
-		// $('.slider-page').show();
+		$('.slider-page').show();
 	}, function() {
-		// $('.slider-page').hide();
+		$('.slider-page').hide();
 		start();
 	});
 	
