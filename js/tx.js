@@ -53,14 +53,26 @@ $(function() {
 		var nowNum = parseInt($(this).next().find('input').val()) - 1;//alert(nowNum)
 		if(nowNum >= 1){
 			numInput.val(parseInt(nowNum));
+			// $('.reduction').text('-');
 		}
 	});
 
 	numInput.keyup(function(){
 		var num = $(this).val();
-		if(isNaN(num) !=false && num < 1 || num > 9){
-			numInput.val(parseInt(num))
-		}
+		// console.log(num);
+			// if(num < 1 ){
+			// 	numInput.val(1);
+			// }
+
+			// if(num >= 9){
+			// 	numInput.val(9);
+			// 	// $('.plus').text("");
+			// }
+
+		// if(isNaN(num) != false){
+			// numInput.val(1);
+		// }
+		
 	});
 
 
