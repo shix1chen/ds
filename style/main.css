@@ -823,8 +823,8 @@
 }
 .select{
 	width: 100px;
-	height: 20px;
-	line-height: 20px;
+	height: 25px;
+	line-height: 25px;
 	background: #fff;
 	color: #666666;
 	border: 1px solid #ccc;
@@ -855,12 +855,15 @@
     background: #fff;
     border: 1px solid #ccc;
     position: absolute;
-    top: 20px;
+    top: 25px;
     left: -1px;
     text-indent: 10px;
 	display: none;
 }
-
+.select .show li:hover{
+	background-color: #4bc7c7;
+	color: #fff;
+}
 .check{
 	/*background: red;*/
 	line-height: 30px;
@@ -1187,6 +1190,7 @@
 	font: 14px/39px 'microsoft YaHei';
 	text-align: center;
 	background: #EFEFEF;
+	cursor: pointer;
 }
 .des_tit .introduce{
 	background: url(../image/icon/intro.png) left 90% no-repeat;
@@ -1197,7 +1201,7 @@
 	padding-left: 30px;
 }
 .des_tit .active{
-	background: #0479CA;
+	background: #4bc7c7;
 	color: #fff;
 }
 .ad{
@@ -1207,6 +1211,13 @@
 .info_tit{
 	border-bottom: 2px solid #D7D7D7;
 	/*padding-bottom: 22px;*/
+}
+
+.des_infoContent .item{
+	/*display: none;*/
+}
+.mt20{
+	margin-top: 20px;
 }
 .text{
 	padding: 0 20px;
@@ -1241,18 +1252,18 @@
 /*商品评价*/
 .pingjia{
 	/*height: 15px;*/
-	border: 1px solid #ccc;
+	/*border: 1px solid #ccc;*/
 	background: #fff;
-	margin-top: 15px;
+	/*margin-top: 15px;*/
 }
 .nobrd{
 	border: none;
 }
 .sp_pj{
-	/*display:inline-block;*/
-	color: #666666;
-	font:bold 15px/38px 'microsoft YaHei';
-	padding-left: 15px;
+    /* display: inline-block; */
+    color: #666666;
+    font: bold 15px/38px 'microsoft YaHei';
+    padding: 0px 5px;
 }
 .score{
 	padding:22px 0 35px 0;
@@ -1394,20 +1405,26 @@
 }
 .zixun{
 	height: 32px;
+	margin-top: 60px;
 }
 .zixun .sp_pj{
-	width: 131px;
+	/*width: 131px;*/
 	height: 40px;
 	color: #0688BA;
 	border: 1px solid #0688BA;
 	border-bottom: none;
-	/*padding-top: 10px;*/
+	padding: 0 15px;
+	margin-left: 31px;
+	/*border-radius: 10px 10px 0 0;*/
+}
+.ml10{
+	margin-left: 10px;
 }
 .zixun .fb{
 	width: auto;
 	height: 40px;
 	border-bottom: 1px solid #0688BA;
-	padding-left: 637px;
+	padding-left: 596px;
 	position: relative;
 }
 .zixun .fb a{
@@ -1421,12 +1438,12 @@
 	text-decoration: underline;
 }
 .tishi{
-	width: 88%;
-	background: #F3F3F3;
-	padding: 12px 22px;
-	line-height: 22px;
-	color: #777777;
-	margin: 20px 30px;
+    width: 88%;
+    background: #F3F3F3;
+    padding: 12px 21px;
+    line-height: 22px;
+    color: #777777;
+    margin: 9px 26px 20px 31px;
 }
 .nobrd .review_user{
 	text-align: center;
@@ -2027,7 +2044,9 @@
 #signIn:hover{
 	opacity: 1;
 } */
-
+em{
+	font-style: normal;;
+}
 .slider,
 .slider-panel img,
 .slider-extra{
@@ -2043,7 +2062,7 @@
 	right: 0;
 	bottom: 0;
 	left: 0;*/
-	padding-left: 365px;
+	padding-left: 190px;
     margin-bottom: 20px;
 }
 

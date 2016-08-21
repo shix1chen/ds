@@ -13,6 +13,66 @@ $(function() {
 		$(this).toggleClass('checked');
 	});
 
+
+	$('.des_item').click(function(){
+		$(this).addClass("	des_item_active").siblings().removeClass('des_item_active');
+		var parent = $(this).parent();
+		if(parent.hasClass('color')){
+			$('.selected_color').text($(this).text());
+		} else if(parent.hasClass('version')){
+			$('.selected_version').text($(this).text());
+		}
+	});
+
+
+	$(".area_select").click(function(e){
+		e.stopPropagation();
+		$(this).find(".options").toggle();
+	});
+
+
+	$(".area_select .options li").click(function(e){
+		e.stopPropagation();
+		$('.selected_area').text($(this).text());
+		$(this).parent().parent().hide()
+	});
+
+	$(document).click(function(){
+		$(".area_select .options").hide()
+	});
+
+	var numInput = $('.des_number input');
+	$('.plus').click(function(){
+		var nowNum = parseInt($(this).prev().find('input').val()) + 1;//alert(nowNum)
+		if(nowNum <= 9){
+			numInput.val(parseInt(nowNum));
+		}
+	});
+
+	$('.reduction').click(function(){
+		var nowNum = parseInt($(this).next().find('input').val()) - 1;//alert(nowNum)
+		if(nowNum >= 1){
+			numInput.val(parseInt(nowNum));
+		}
+	});
+
+	numInput.keyup(function(){
+		var num = $(this).val();
+		if(isNaN(num) !=false && num < 1 || num > 9){
+			numInput.val(parseInt(num))
+		}
+	});
+
+
+	$(".des_tit li").click(function(){
+		$(this).addClass('active').siblings().removeClass('active');
+		var cur = $(this).index();
+		$('.des_infoContent .item').eq(cur).show().siblings(".item").hide();
+	});
+
+
+	
+
 	// // 点击登录 
 	// $("#login").click(function() {
 
