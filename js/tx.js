@@ -57,23 +57,23 @@ $(function() {
 		}
 	});
 
-	numInput.keyup(function(){
+	/*numInput.keyup(function(){
 		var num = $(this).val();
-		// console.log(num);
-			// if(num < 1 ){
-			// 	numInput.val(1);
-			// }
+		console.log(num);
+			if(num < 1 ){
+				numInput.val(1);
+			}
 
-			// if(num >= 9){
-			// 	numInput.val(9);
-			// 	// $('.plus').text("");
-			// }
+			if(num >= 9){
+				numInput.val(9);
+				// $('.plus').text("");
+			}
 
-		// if(isNaN(num) != false){
-			// numInput.val(1);
-		// }
+		if(isNaN(num) != false){
+			numInput.val(1);
+		}
 		
-	});
+	});*/
 
 
 	$(".des_tit li").click(function(){
